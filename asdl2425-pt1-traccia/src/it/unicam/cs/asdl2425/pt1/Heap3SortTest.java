@@ -1,3 +1,27 @@
+/*
+ * MIT License
+ *
+ * Copyright (c) 2025 Giuseppe Calabrese
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
 /**
  *
  */
@@ -13,7 +37,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Classe di Test per Heap3Sort.
- * 
+ *
  * @author Luca Tesei
  */
 class Heap3SortTest {
@@ -81,7 +105,7 @@ class Heap3SortTest {
                                                     // implementation
 
     }
-    
+
     @Test
     void testDuplicates() {
         Heap3Sort<Integer> heapSort = new Heap3Sort<>();
@@ -93,7 +117,7 @@ class Heap3SortTest {
         assertEquals(expectedList, result.getL(), "Lista ordinata con duplicati non corretta.");
         assertTrue(result.checkOrder(), "Lista non è ordinata in ordine crescente.");
     }
-    
+
     @Test
     void testAlreadySorted() {
         Heap3Sort<Integer> heapSort = new Heap3Sort<>();
@@ -105,7 +129,7 @@ class Heap3SortTest {
         assertEquals(expectedList, result.getL(), "Lista ordinata non corrisponde all'attesa.");
         assertTrue(result.checkOrder(), "Lista già ordinata non è stata riconosciuta come tale.");
     }
-    
+
     @Test
     void testReverseSorted() {
         Heap3Sort<Integer> heapSort = new Heap3Sort<>();
@@ -117,7 +141,7 @@ class Heap3SortTest {
         assertEquals(expectedList, result.getL(), "Lista decrescente non è stata ordinata correttamente.");
         assertTrue(result.checkOrder(), "Lista non è ordinata in ordine crescente.");
     }
-    
+
     @Test
     void testSingleElement() {
         Heap3Sort<Integer> heapSort = new Heap3Sort<>();
@@ -129,7 +153,7 @@ class Heap3SortTest {
         assertEquals(expectedList, result.getL(), "Lista con un solo elemento non ordinata correttamente.");
         assertTrue(result.checkOrder(), "Lista con un solo elemento non è stata riconosciuta come ordinata.");
     }
-    
+
     @Test
     void testStringSorting() {
         Heap3Sort<String> heapSort = new Heap3Sort<>();
@@ -141,7 +165,7 @@ class Heap3SortTest {
         assertEquals(expectedList, result.getL(), "Lista di stringhe non è stata ordinata correttamente.");
         assertTrue(result.checkOrder(), "Lista di stringhe non è ordinata.");
     }
-    
+
     @Test
     void testNegativeNumbers() {
         Heap3Sort<Integer> heapSort = new Heap3Sort<>();
