@@ -1,6 +1,6 @@
 \documentclass{article}
-\usepackage{graphicx} % Required for inserting images
-\usepackage{float}
+\usepackage{graphicx}  % Per le immagini
+\usepackage{float}      % Per il posizionamento delle figure
 
 \title{Grafici}
 \author{GIUSEPPE CALABRESE}
@@ -8,99 +8,75 @@
 
 \begin{document}
 
-\begin{figure}
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.5\linewidth]{Logo Unicam/unicam.jpg}
-    \label{fig:enter-label}
+    \label{fig:logo}
 \end{figure}
 
 \centering
-{\Large \textbf{Università degli studi di Camerino}     \par
+{\Large \textbf{Università degli Studi di Camerino}     \par
     \vspace{1 cm}
         \Large \textbf{Scuola di Scienze e Tecnologie}  \par
-        \Large \textbf{Algoritmi e Strutture dati}      \par
-    \vspace{4 cm}
+        \Large \textbf{Algoritmi e Strutture Dati}      \par
+    \vspace{3 cm}
         \Large \textbf{GRAFICI SULLA VALUTAZIONE NUMERICA DELLE PRESTAZIONI} \par
     \vspace{1 cm}
-        \Large \textbf{Giuseppe Calabrese (Matricola 122630)}}
-
-
-\newpage
-\vspace*{-2.4 cm}
- % Grafico per numero di confronti per AVLTreeSort
-\begin{center}
-    \Large \textbf{Numero di confronti per AVLTreeSort}
-    \begin{figure}[h]
-        \centering
-        \includegraphics[width=0.98\linewidth]{Grafici/AVLTreeSort.png}
-        \label{fig:graph}
-    \end{figure}
-\end{center}
-
-
- % Grafico per numero di confronti per AVLTreeSort
- \vspace*{2.4 cm}
-\begin{center}
-    \Large \textbf{Numero di confronti per Heap3Sort}
-    \begin{figure}[h]
-        \centering
-        \includegraphics[width=0.97\linewidth]{Grafici/Heap3SortConf.png}
-        \label{fig:graph}
-    \end{figure}
-\end{center}
-
+        \Large \textbf{Giuseppe Calabrese (Matricola 122630)}
+}
 
 \newpage
-\vspace*{-2.9 cm}
- % Grafico per numero di confronti per AVLTreeSort
-\begin{center}
-    \Large \textbf{Heap3Sort tempo di esecuzione in ns.}
-    \begin{figure}[h]
-        \centering
-        \includegraphics[width=0.95\linewidth]{Grafici/Heap3SortTempNs.png}
-        \label{fig:graph}
-    \end{figure}
-\end{center}
 
+% Primo set di grafici
+\section*{Numero di confronti}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.98\linewidth]{Grafici/AVLTreeSort.png}
+    \caption{Numero di confronti per AVLTreeSort}
+    \label{fig:avl_confronti}
+\end{figure}
 
- % Grafico per numero di confronti per AVLTreeSort
- \vspace*{1 cm}
-\begin{center}
-    \Large \textbf{AVLTreeSort tempo di esecuzione in ns.}
-    \begin{figure}[h]
-        \centering
-        \vspace*{-0.1 cm}
-        \includegraphics[width=0.95\linewidth]{Grafici/AVLTreeSortTempNs.png}
-        \label{fig:graph}
-    \end{figure}
-\end{center}
-
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.98\linewidth]{Grafici/Heap3SortConf.png}
+    \caption{Numero di confronti per Heap3Sort}
+    \label{fig:heap_confronti}
+\end{figure}
 
 \newpage
-\vspace*{-2.9 cm}
- % Grafico per Confronto AVL vs Heap caso medio e max per il
- % numero di confronti
-\begin{center}
-    \Large \textbf{Confronto AVL vs Heap caso medio e max per il numero di confronti}
-    \begin{figure}[h]
-        \centering
-        \includegraphics[width=0.95\linewidth]{Grafici/AVLvsHEApNc.png}
-        \label{fig:graph}
-    \end{figure}
-\end{center}
 
+% Secondo set di grafici
+\section*{Tempi di esecuzione}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\linewidth]{Grafici/Heap3SortTempNs.png}
+    \caption{Heap3Sort tempo di esecuzione in nanosecondi}
+    \label{fig:heap_tempo}
+\end{figure}
 
-% Grafico per Confronto AVL vs Heap caso medio e max per il
-% tempo di esecuzione in ns
- \vspace*{1 cm}
-\begin{center}
-    \Large \textbf{Confronto AVL vs Heap caso medio e max per il tempo di esecuzione in ns}
-    \begin{figure}[h]
-        \centering
-        \vspace*{-0.1 cm}
-        \includegraphics[width=0.95\linewidth]{Grafici/AVLvsHeapTs.png}
-        \label{fig:graph}
-    \end{figure}
-\end{center}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\linewidth]{Grafici/AVLTreeSortTempNs.png}
+    \caption{AVLTreeSort tempo di esecuzione in nanosecondi}
+    \label{fig:avl_tempo}
+\end{figure}
+
+\newpage
+
+% Terzo set di grafici
+\section*{Confronto tra AVL e Heap}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\linewidth]{Grafici/AVLvsHEApNc.png}
+    \caption{Confronto AVL vs Heap: caso medio e massimo per numero di confronti}
+    \label{fig:confronto_nc}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\linewidth]{Grafici/AVLvsHeapTs.png}
+    \caption{Confronto AVL vs Heap: caso medio e massimo per tempo di esecuzione}
+    \label{fig:confronto_ts}
+\end{figure}
 
 \end{document}
