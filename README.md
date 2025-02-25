@@ -26,12 +26,14 @@ Entrambe le implementazioni (AVLTreeSort e Heap3Sort) sono algoritmi di ordiname
 ## Test JUnit
 
 Per l'esecuzione dei test unitari si utilizza il framework [JUnit 5](https://junit.org/junit5/docs/current/user-guide/).  
+Per la generazione del documento si utilizza la distribuzione [TeX Live](https://www.tug.org/texlive/acquire-netinstall.html).
 
 ## Come Eseguire il Progetto
 
 ### Requisiti
 - **Java JDK 8** (o superiore)
 - **JUnit 5** per i test unitari
+- **TeX Live
 
 ### Istruzioni
 1. **Clonare il Repository:**
