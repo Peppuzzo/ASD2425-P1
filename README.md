@@ -33,7 +33,7 @@ Per la generazione del documento si utilizza la distribuzione [TeX Live](https:/
 ### Requisiti
 - **Java JDK 8** (o superiore)
 - **JUnit 5** per i test unitari
-- **TeX Live
+- **TeX Live** per la documentazione dei grafici
 
 ### Istruzioni
 1. **Clonare il Repository:**
